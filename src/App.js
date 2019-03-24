@@ -1,27 +1,37 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+
+import Navbar from './Navbar';
+
+import Home from './main/Home';
+import About from './main/About';
+import Services from './main/Services';
+import Skills from './main/Skills';
+import Education from './main/Education';
+import Experience from './main/Experience';
+import Work from './main/Work';
+import Blog from './main/Blog';
+import Contact from './main/Contact';
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
-    );
+      <div id="colorlib-page">
+		    <div className="container-wrap">
+          <Navbar />
+          <div id="colorlib-main">
+            <Home />
+            <About />
+            <Services />
+            <Skills />
+            <Education />
+            <Experience />
+            <Work />
+            <Blog />
+            <Contact />
+          </div>
+	  </div> 
+    </div>); 
+    
   }
 }
 
